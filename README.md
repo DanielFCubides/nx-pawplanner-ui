@@ -22,11 +22,11 @@ Before you begin, ensure you have the latest version of [Node.js](https://nodejs
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/pawplanner.git
+   git clone https://github.com/DanielFCubides/nx-pawplanner-ui.git
    ```
 2. Navigate to the project directory:
    ```bash
-   cd pawplanner
+   cd nx-pawplanner-ui
    ```
 3. Install the project dependencies:
    ```bash

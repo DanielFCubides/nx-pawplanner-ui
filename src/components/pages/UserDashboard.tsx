@@ -28,7 +28,7 @@ export const UserDashboard = ({user, onLogout}) => {
             health: 'bg-red-100 text-red-800',
             exercise: 'bg-green-100 text-green-800',
             grooming: 'bg-purple-100 text-purple-800',
-            training: 'bg-blue-100 text-blue-800'
+            training: 'bg-orange-100 text-orange-800'
         };
         return colors[category] || 'bg-gray-100 text-gray-800';
     };
@@ -37,7 +37,7 @@ export const UserDashboard = ({user, onLogout}) => {
         return (
             <div className="min-h-screen bg-gray-50 flex items-center justify-center">
                 <div className="text-center">
-                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600 mx-auto mb-4"></div>
+                    <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-orange-600 mx-auto mb-4"></div>
                     <p className="text-gray-600">Loading your pet events...</p>
                 </div>
             </div>
@@ -51,21 +51,21 @@ export const UserDashboard = ({user, onLogout}) => {
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="flex justify-between items-center h-16">
                         <div className="flex items-center">
-                            <Heart className="w-8 h-8 text-blue-600 mr-2"/>
+                            <Heart className="w-8 h-8 text-orange-600 mr-2"/>
                             <span className="text-2xl font-bold text-gray-900">PetTracker</span>
                         </div>
 
                         <div className="flex items-center space-x-4">
                             <button
                                 onClick={() => setShowAddEvent(true)}
-                                className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors flex items-center space-x-2"
+                                className="bg-orange-600 text-white px-4 py-2 rounded-lg hover:bg-orange-700 transition-colors flex items-center space-x-2"
                             >
                                 <Plus className="w-4 h-4"/>
                                 <span>Add Event</span>
                             </button>
 
                             <div className="flex items-center space-x-3">
-                                <div className="w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center">
+                                <div className="w-8 h-8 bg-orange-600 rounded-full flex items-center justify-center">
                                     <User className="w-4 h-4 text-white"/>
                                 </div>
                                 <span className="text-gray-700 font-medium">{user.name}</span>

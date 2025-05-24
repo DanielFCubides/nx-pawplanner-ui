@@ -34,12 +34,12 @@ export const LoginPage = ({onNavigate, onLogin}) => {
     };
 
     return (
-        <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center p-4">
+        <div className="min-h-screen bg-gradient-to-br from-orange-50 to-indigo-100 flex items-center justify-center p-4">
             <div className="max-w-md w-full">
                 {/* Header */}
                 <div className="text-center mb-8">
                     <div className="flex justify-center mb-4">
-                        <Heart className="w-12 h-12 text-blue-600"/>
+                        <Heart className="w-12 h-12 text-orange-600"/>
                     </div>
                     <h1 className="text-3xl font-bold text-gray-900 mb-2">Welcome Back</h1>
                     <p className="text-gray-600">Sign in to your PetTracker account</p>
@@ -78,7 +78,7 @@ export const LoginPage = ({onNavigate, onLogin}) => {
                                     name="password"
                                     value={formData.password}
                                     onChange={handleChange}
-                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-colors pr-12"
+                                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-orange-500 focus:border-transparent transition-colors pr-12"
                                     placeholder="Enter your password"
                                 />
                                 <button
@@ -94,7 +94,7 @@ export const LoginPage = ({onNavigate, onLogin}) => {
                         <button
                             onClick={handleSubmit}
                             disabled={isLoading}
-                            className="w-full bg-blue-600 text-white py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                            className="w-full bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                         >
                             {isLoading ? 'Signing In...' : 'Sign In'}
                         </button>
@@ -103,7 +103,7 @@ export const LoginPage = ({onNavigate, onLogin}) => {
                     <div className="mt-6 text-center">
                         <p className="text-gray-600">
                             Don't have an account?{' '}
-                            <button className="text-blue-600 hover:text-blue-700 font-medium">
+                            <button className="text-orange-600 hover:text-orange-700 font-medium">
                                 Sign up
                             </button>
                         </p>
@@ -120,7 +120,7 @@ export const LoginPage = ({onNavigate, onLogin}) => {
                 <div className="text-center mt-6">
                     <button
                         onClick={() => onNavigate('landing')}
-                        className="text-blue-600 hover:text-blue-700 font-medium"
+                        className="text-orange-600 hover:text-orange-700 font-medium"
                     >
                         ← Back to Home
                     </button>
